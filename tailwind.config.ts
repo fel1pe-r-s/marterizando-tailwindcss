@@ -20,7 +20,12 @@ const config: Config = {
           25: "#fcfaff",
         },
       },
+
       keyframes: {
+        slideDownAndFade: {
+          from: { opacity: "0", transform: "translateY(-2px)" },
+          to: { opacity: "1", transform: "translateY(0)" },
+        },
         wiggle: {
           "0%": {
             transform: "scale(0)",
@@ -29,11 +34,12 @@ const config: Config = {
             transform: "scale(1)",
           },
         },
-        animation: {
-          wiggle: {
-            wiggle: "wiggle 0.1s ease-out",
-          },
-        },
+      },
+
+      animation: {
+        wiggle: "wiggle 0.1s ease-out",
+        slideDownAndFade:
+          "slideDownAndFade 1000ms cubic-bezier(0.16, 1, 0.3, 1)",
       },
     },
   },
