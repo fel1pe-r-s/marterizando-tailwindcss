@@ -13,7 +13,7 @@ export const FileList = () => {
       {files.map((file) => (
         <FileItem
           key={file.name}
-          state="error"
+          state="complete"
           name={file.name}
           size={file.size}
         />

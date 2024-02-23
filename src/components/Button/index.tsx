@@ -1,4 +1,3 @@
-"use client";
 import { ComponentProps } from "react";
 import { tv, VariantProps } from "tailwind-variants";
 
@@ -10,10 +9,12 @@ const button = tv({
   ],
   variants: {
     variant: {
-      primary: "bg-violet-600 text-white hover:bg-violet-700",
+      primary:
+        "dark:bg-violet-500 dark:hover:bg-violet-600 bg-violet-600 text-white hover:bg-violet-700",
       outline:
-        "border border-zinc-300 text-zinc-700 shadow-sm hover:bg-zinc-50",
-      ghost: "rounded-md px-2 shadow-none hover:bg-zinc-50  text-zinc-500",
+        "dark:border-zinc-700 dark:text-zinc-400 border border-zinc-300 text-zinc-700 shadow-sm hover:bg-zinc-50 dark:hover:bg-zinc-800",
+      ghost:
+        "dark:hover:bg-white/5 dark:text-zinc-400  rounded-md px-2 shadow-none hover:bg-zinc-50  text-zinc-500",
     },
   },
   defaultVariants: {
