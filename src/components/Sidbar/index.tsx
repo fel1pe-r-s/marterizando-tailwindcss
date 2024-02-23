@@ -29,7 +29,6 @@ export function Sidebar() {
           </Button>
         </Collapsible.Trigger>
       </div>
-      responsividade
       <Collapsible.Content
         forceMount
         className="flex flex-1 flex-col gap-6 data-[state=closed]:hidden lg:data-[state=closed]:flex"
